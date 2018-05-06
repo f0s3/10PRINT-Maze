@@ -1,0 +1,22 @@
+body {
+    display: inline;
+    background-color: #000;
+    margin: 0;
+}
+div[class^='row-'] {
+    height: 20px;
+}
+.slash, .backslash {
+    width: 20px;
+    height: 20px;
+    position:relative;
+    float: left;
+}
+.slash:after, .backslash:after {
+    content:"";
+    position:absolute;
+    border-top: 3px solid white;
+    width:29px;
+}
+.slash:after {transform: rotate(-45deg)}
+.backslash:after {transform: rotate(45deg);}
